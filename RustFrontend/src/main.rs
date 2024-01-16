@@ -5,7 +5,7 @@ struct Model{
 }
 
 #[function_component(App)]
-fn App()-> Html{
+fn app()-> Html{
     let state = use_state(|| Model{
             value:0
     });
@@ -19,7 +19,7 @@ fn App()-> Html{
                     value: state.value+1
                 })
         })
-    }
+    };
 
     html!{
         <div>
